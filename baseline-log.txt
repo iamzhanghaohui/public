@@ -1,0 +1,207 @@
+clean the executable output directory
+Done!
+clean the library output directory
+Done!
+clean the build directory
+Done!
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMAKE MODULE Path: /usr/share/cmake-3.10/Modules/;/root/test/DEBE/Baseline/cmake
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.36.0") found components: thread system serialization 
+-- Found LevelDB: /usr/include  
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Find LevelDB version: 1.23
+-- Find OpenSSL version: 3.0.2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/test/DEBE/Baseline/build
+/usr/bin/cmake -S/root/test/DEBE/Baseline -B/root/test/DEBE/Baseline/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/test/DEBE/Baseline/build/CMakeFiles /root/test/DEBE/Baseline/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/root/test/DEBE/Baseline/build'
+make  -f src/KeyManager/CMakeFiles/KMCore.dir/build.make src/KeyManager/CMakeFiles/KMCore.dir/depend
+make  -f src/Comm/CMakeFiles/CommCore.dir/build.make src/Comm/CMakeFiles/CommCore.dir/depend
+make  -f src/KeyGen/CMakeFiles/KeyGenCore.dir/build.make src/KeyGen/CMakeFiles/KeyGenCore.dir/depend
+make  -f src/Util/CMakeFiles/UtilCore.dir/build.make src/Util/CMakeFiles/UtilCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+cd /root/test/DEBE/Baseline/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Baseline /root/test/DEBE/Baseline/src/KeyManager /root/test/DEBE/Baseline/build /root/test/DEBE/Baseline/build/src/KeyManager /root/test/DEBE/Baseline/build/src/KeyManager/CMakeFiles/KMCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+cd /root/test/DEBE/Baseline/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Baseline /root/test/DEBE/Baseline/src/Comm /root/test/DEBE/Baseline/build /root/test/DEBE/Baseline/build/src/Comm /root/test/DEBE/Baseline/build/src/Comm/CMakeFiles/CommCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+cd /root/test/DEBE/Baseline/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Baseline /root/test/DEBE/Baseline/src/KeyGen /root/test/DEBE/Baseline/build /root/test/DEBE/Baseline/build/src/KeyGen /root/test/DEBE/Baseline/build/src/KeyGen/CMakeFiles/KeyGenCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+cd /root/test/DEBE/Baseline/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Baseline /root/test/DEBE/Baseline/src/Util /root/test/DEBE/Baseline/build /root/test/DEBE/Baseline/build/src/Util /root/test/DEBE/Baseline/build/src/Util/CMakeFiles/UtilCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make  -f src/KeyGen/CMakeFiles/KeyGenCore.dir/build.make src/KeyGen/CMakeFiles/KeyGenCore.dir/build
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make  -f src/KeyManager/CMakeFiles/KMCore.dir/build.make src/KeyManager/CMakeFiles/KMCore.dir/build
+make  -f src/Comm/CMakeFiles/CommCore.dir/build.make src/Comm/CMakeFiles/CommCore.dir/build
+make  -f src/Util/CMakeFiles/UtilCore.dir/build.make src/Util/CMakeFiles/UtilCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+make[2]: Entering directory '/root/test/DEBE/Baseline/build'
+[  8%] Building CXX object src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o
+[  8%] Building CXX object src/KeyGen/CMakeFiles/KeyGenCore.dir/absDaE.cc.o
+[  8%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o
+[  8%] Building CXX object src/KeyManager/CMakeFiles/KMCore.dir/absKM.cc.o
+cd /root/test/DEBE/Baseline/build/src/Comm && /usr/bin/clang++   -O3 -Wall -MD -MT src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o -MF CMakeFiles/CommCore.dir/sslConnect.cc.o.d -o CMakeFiles/CommCore.dir/sslConnect.cc.o -c /root/test/DEBE/Baseline/src/Comm/sslConnect.cc
+cd /root/test/DEBE/Baseline/build/src/Util && /usr/bin/clang++   -O3 -Wall -MD -MT src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o -MF CMakeFiles/UtilCore.dir/clientVar.cc.o.d -o CMakeFiles/UtilCore.dir/clientVar.cc.o -c /root/test/DEBE/Baseline/src/Util/clientVar.cc
+cd /root/test/DEBE/Baseline/build/src/KeyManager && /usr/bin/clang++   -O3 -Wall -MD -MT src/KeyManager/CMakeFiles/KMCore.dir/absKM.cc.o -MF CMakeFiles/KMCore.dir/absKM.cc.o.d -o CMakeFiles/KMCore.dir/absKM.cc.o -c /root/test/DEBE/Baseline/src/KeyManager/absKM.cc
+cd /root/test/DEBE/Baseline/build/src/KeyGen && /usr/bin/clang++   -O3 -Wall -MD -MT src/KeyGen/CMakeFiles/KeyGenCore.dir/absDaE.cc.o -MF CMakeFiles/KeyGenCore.dir/absDaE.cc.o.d -o CMakeFiles/KeyGenCore.dir/absDaE.cc.o -c /root/test/DEBE/Baseline/src/KeyGen/absDaE.cc
+In file included from /root/test/DEBE/Baseline/src/Comm/sslConnect.cc:12:
+In file included from /root/test/DEBE/Baseline/src/Comm/../../include/sslConnection.h:15:
+In file included from /root/test/DEBE/Baseline/src/Comm/../../include/configure.h:17:
+/root/test/DEBE/Baseline/src/Comm/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Baseline/src/KeyGen/absDaE.cc:12:
+In file included from /root/test/DEBE/Baseline/src/KeyGen/../../include/absDaE.h:15:
+In file included from /root/test/DEBE/Baseline/src/KeyGen/../../include/configure.h:17:
+/root/test/DEBE/Baseline/src/KeyGen/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Baseline/src/Comm/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+/root/test/DEBE/Baseline/src/KeyGen/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+In file included from /root/test/DEBE/Baseline/src/Util/clientVar.cc:12:
+In file included from /root/test/DEBE/Baseline/src/Util/../../include/clientVar.h:15:
+In file included from /root/test/DEBE/Baseline/src/Util/../../include/configure.h:17:
+/root/test/DEBE/Baseline/src/Util/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Baseline/src/Util/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+In file included from /root/test/DEBE/Baseline/src/KeyManager/absKM.cc:12:
+In file included from /root/test/DEBE/Baseline/src/KeyManager/../../include/absKM.h:15:
+In file included from /root/test/DEBE/Baseline/src/KeyManager/../../include/configure.h:17:
+/root/test/DEBE/Baseline/src/KeyManager/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Baseline/src/KeyManager/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+1 warning and 1 error generated.
+1 warning and 1 error generated.
+make[2]: *** [src/Comm/CMakeFiles/CommCore.dir/build.make:79: src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make[2]: *** [src/KeyGen/CMakeFiles/KeyGenCore.dir/build.make:79: src/KeyGen/CMakeFiles/KeyGenCore.dir/absDaE.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:516: src/Comm/CMakeFiles/CommCore.dir/all] Error 2
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:386: src/KeyGen/CMakeFiles/KeyGenCore.dir/all] Error 2
+1 warning and 1 error generated.
+[ 13%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o
+[ 13%] Building CXX object src/KeyManager/CMakeFiles/KMCore.dir/dupLESSKM.cc.o
+cd /root/test/DEBE/Baseline/build/src/Util && /usr/bin/clang++   -O3 -Wall -MD -MT src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o -MF CMakeFiles/UtilCore.dir/compressGen.cc.o.d -o CMakeFiles/UtilCore.dir/compressGen.cc.o -c /root/test/DEBE/Baseline/src/Util/compressGen.cc
+cd /root/test/DEBE/Baseline/build/src/KeyManager && /usr/bin/clang++   -O3 -Wall -MD -MT src/KeyManager/CMakeFiles/KMCore.dir/dupLESSKM.cc.o -MF CMakeFiles/KMCore.dir/dupLESSKM.cc.o.d -o CMakeFiles/KMCore.dir/dupLESSKM.cc.o -c /root/test/DEBE/Baseline/src/KeyManager/dupLESSKM.cc
+make[2]: *** [src/KeyManager/CMakeFiles/KMCore.dir/build.make:79: src/KeyManager/CMakeFiles/KMCore.dir/absKM.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[ 15%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/configure.cc.o
+cd /root/test/DEBE/Baseline/build/src/Util && /usr/bin/clang++   -O3 -Wall -MD -MT src/Util/CMakeFiles/UtilCore.dir/configure.cc.o -MF CMakeFiles/UtilCore.dir/configure.cc.o.d -o CMakeFiles/UtilCore.dir/configure.cc.o -c /root/test/DEBE/Baseline/src/Util/configure.cc
+1 warning and 1 error generated.
+make[2]: *** [src/Util/CMakeFiles/UtilCore.dir/build.make:79: src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /root/test/DEBE/Baseline/src/Util/compressGen.cc:12:
+In file included from /root/test/DEBE/Baseline/src/Util/../../include/compressGen.h:15:
+/root/test/DEBE/Baseline/src/Util/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Baseline/src/Util/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+1 warning and 1 error generated.
+make[2]: *** [src/Util/CMakeFiles/UtilCore.dir/build.make:93: src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o] Error 1
+In file included from /root/test/DEBE/Baseline/src/Util/configure.cc:11:
+In file included from /root/test/DEBE/Baseline/src/Util/../../include/configure.h:17:
+/root/test/DEBE/Baseline/src/Util/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Baseline/src/KeyManager/dupLESSKM.cc:12:
+In file included from /root/test/DEBE/Baseline/src/KeyManager/../../include/dupLESSKM.h:15:
+In file included from /root/test/DEBE/Baseline/src/KeyManager/../../include/absKM.h:15:
+In file included from /root/test/DEBE/Baseline/src/KeyManager/../../include/configure.h:17:
+/root/test/DEBE/Baseline/src/KeyManager/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Baseline/src/Util/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+/root/test/DEBE/Baseline/src/KeyManager/../../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+/root/test/DEBE/Baseline/src/KeyManager/dupLESSKM.cc:22:18: warning: 'RSA_new' is deprecated [-Wdeprecated-declarations]
+    serverRSA_ = RSA_new();
+                 ^
+/usr/include/openssl/rsa.h:201:1: note: 'RSA_new' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 RSA *RSA_new(void);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Baseline/src/KeyManager/dupLESSKM.cc:25:5: warning: 'PEM_read_bio_RSAPrivateKey' is deprecated [-Wdeprecated-declarations]
+    PEM_read_bio_RSAPrivateKey(privateKeyFile_, &serverRSA_, NULL, passwd);
+    ^
+/usr/include/openssl/pem.h:447:24: note: 'PEM_read_bio_RSAPrivateKey' has been explicitly marked deprecated here
+DECLARE_PEM_rw_cb_attr(OSSL_DEPRECATEDIN_3_0, RSAPrivateKey, RSA)
+                       ^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Baseline/src/KeyManager/dupLESSKM.cc:26:5: warning: 'RSA_get0_key' is deprecated [-Wdeprecated-declarations]
+    RSA_get0_key(serverRSA_, &serverKeyN_, NULL, &serverKeyD_);
+    ^
+/usr/include/openssl/rsa.h:217:1: note: 'RSA_get0_key' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void RSA_get0_key(const RSA *r,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Baseline/src/KeyManager/dupLESSKM.cc:42:5: warning: 'RSA_free' is deprecated [-Wdeprecated-declarations]
+    RSA_free(serverRSA_);
+    ^
+/usr/include/openssl/rsa.h:293:1: note: 'RSA_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void RSA_free(RSA *r);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+1 warning and 1 error generated.
+5 warnings and 1 error generated.
+make[2]: *** [src/Util/CMakeFiles/UtilCore.dir/build.make:107: src/Util/CMakeFiles/UtilCore.dir/configure.cc.o] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make[1]: *** [CMakeFiles/Makefile2:412: src/Util/CMakeFiles/UtilCore.dir/all] Error 2
+make[2]: *** [src/KeyManager/CMakeFiles/KMCore.dir/build.make:93: src/KeyManager/CMakeFiles/KMCore.dir/dupLESSKM.cc.o] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Baseline/build'
+make[1]: *** [CMakeFiles/Makefile2:542: src/KeyManager/CMakeFiles/KMCore.dir/all] Error 2
+make[1]: Leaving directory '/root/test/DEBE/Baseline/build'
+make: *** [Makefile:94: all] Error 2
