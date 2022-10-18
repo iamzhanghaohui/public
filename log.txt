@@ -1,0 +1,506 @@
+clean the executable output directory
+Done!
+clean the library output directory
+Done!
+clean the build directory
+Done!
+build the library output directory
+Done!
+build the build directory
+Done!
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMAKE MODULE Path: /usr/share/cmake-3.16/Modules/;/root/test/DEBE/Prototype/cmake
+CMake Deprecation Warning at cmake/FindSGX.cmake:3 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  src/CMakeLists.txt:1 (find_package)
+
+
+-- Found Intel SGX SDK.
+-- Found Intel SGX SSL.
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.36.0") found components: thread system serialization 
+-- Found LevelDB: /usr/include  
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Find LevelDB version: 1.23
+-- Find OpenSSL version: 3.0.2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/test/DEBE/Prototype/build
+/usr/bin/cmake -S/root/test/DEBE/Prototype -B/root/test/DEBE/Prototype/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/test/DEBE/Prototype/build/CMakeFiles /root/test/DEBE/Prototype/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/root/test/DEBE/Prototype/build'
+make  -f src/IASUtil/CMakeFiles/IASCore.dir/build.make src/IASUtil/CMakeFiles/IASCore.dir/depend
+make  -f src/Comm/CMakeFiles/CommCore.dir/build.make src/Comm/CMakeFiles/CommCore.dir/depend
+make  -f src/Util/CMakeFiles/UtilCore.dir/build.make src/Util/CMakeFiles/UtilCore.dir/depend
+make  -f src/Database/CMakeFiles/DatabaseCore.dir/build.make src/Database/CMakeFiles/DatabaseCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/IASUtil /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/IASUtil /root/test/DEBE/Prototype/build/src/IASUtil/CMakeFiles/IASCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Comm /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Comm /root/test/DEBE/Prototype/build/src/Comm/CMakeFiles/CommCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Util /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Util /root/test/DEBE/Prototype/build/src/Util/CMakeFiles/UtilCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Database /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Database /root/test/DEBE/Prototype/build/src/Database/CMakeFiles/DatabaseCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Comm/CMakeFiles/CommCore.dir/build.make src/Comm/CMakeFiles/CommCore.dir/build
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/IASUtil/CMakeFiles/IASCore.dir/build.make src/IASUtil/CMakeFiles/IASCore.dir/build
+make  -f src/Util/CMakeFiles/UtilCore.dir/build.make src/Util/CMakeFiles/UtilCore.dir/build
+make  -f src/Database/CMakeFiles/DatabaseCore.dir/build.make src/Database/CMakeFiles/DatabaseCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[  5%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o
+[  5%] Building CXX object src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o
+[  5%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/agent_wget.cc.o
+[  5%] Building CXX object src/Database/CMakeFiles/DatabaseCore.dir/absDatabase.cc.o
+cd /root/test/DEBE/Prototype/build/src/Comm && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o -MF CMakeFiles/CommCore.dir/sslConnect.cc.o.d -o CMakeFiles/CommCore.dir/sslConnect.cc.o -c /root/test/DEBE/Prototype/src/Comm/sslConnect.cc
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/agent_wget.cc.o -MF CMakeFiles/IASCore.dir/agent_wget.cc.o.d -o CMakeFiles/IASCore.dir/agent_wget.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/agent_wget.cc
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o -MF CMakeFiles/UtilCore.dir/clientVar.cc.o.d -o CMakeFiles/UtilCore.dir/clientVar.cc.o -c /root/test/DEBE/Prototype/src/Util/clientVar.cc
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/Database/CMakeFiles/DatabaseCore.dir/absDatabase.cc.o -MF CMakeFiles/DatabaseCore.dir/absDatabase.cc.o.d -o CMakeFiles/DatabaseCore.dir/absDatabase.cc.o -c /root/test/DEBE/Prototype/src/Database/absDatabase.cc
+[  6%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/base64.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/base64.c.o -MF CMakeFiles/IASCore.dir/base64.c.o.d -o CMakeFiles/IASCore.dir/base64.c.o -c /root/test/DEBE/Prototype/src/IASUtil/base64.c
+[  8%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/byteorder.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/byteorder.c.o -MF CMakeFiles/IASCore.dir/byteorder.c.o.d -o CMakeFiles/IASCore.dir/byteorder.c.o -c /root/test/DEBE/Prototype/src/IASUtil/byteorder.c
+In file included from /root/test/DEBE/Prototype/src/Util/clientVar.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/clientVar.h:15:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Prototype/src/../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+[  9%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/common.cc.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/common.cc.o -MF CMakeFiles/IASCore.dir/common.cc.o.d -o CMakeFiles/IASCore.dir/common.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/common.cc
+[ 10%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/crypto.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/crypto.c.o -MF CMakeFiles/IASCore.dir/crypto.c.o.d -o CMakeFiles/IASCore.dir/crypto.c.o -c /root/test/DEBE/Prototype/src/IASUtil/crypto.c
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:113:10: warning: 'EC_KEY_new_by_curve_name' is deprecated [-Wdeprecated-declarations]
+        eckey = EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
+                ^
+/usr/include/openssl/ec.h:998:1: note: 'EC_KEY_new_by_curve_name' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:134:8: warning: 'EC_KEY_set_private_key' is deprecated [-Wdeprecated-declarations]
+                if (!EC_KEY_set_private_key(eckey, gx)) {
+                     ^
+/usr/include/openssl/ec.h:1056:1: note: 'EC_KEY_set_private_key' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_private_key(EC_KEY *key, const BIGNUM *prv);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:141:11: warning: 'EC_KEY_get0_group' is deprecated [-Wdeprecated-declarations]
+                group = EC_KEY_get0_group(eckey);
+                        ^
+/usr/include/openssl/ec.h:1034:1: note: 'EC_KEY_get0_group' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 const EC_GROUP *EC_KEY_get0_group(const EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:162:8: warning: 'EC_KEY_set_public_key' is deprecated [-Wdeprecated-declarations]
+                if (!EC_KEY_set_public_key(eckey, pubpt)) {
+                     ^
+/usr/include/openssl/ec.h:1070:1: note: 'EC_KEY_set_public_key' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_public_key(EC_KEY *key, const EC_POINT *pub);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:193:8: warning: 'EC_KEY_set_public_key_affine_coordinates' is deprecated [-Wdeprecated-declarations]
+                if (!EC_KEY_set_public_key_affine_coordinates(eckey, gx, gy)) {
+                     ^
+/usr/include/openssl/ec.h:1122:1: note: 'EC_KEY_set_public_key_affine_coordinates' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_public_key_affine_coordinates(EC_KEY *key,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:209:7: warning: 'EVP_PKEY_set1_EC_KEY' is deprecated [-Wdeprecated-declarations]
+        if (!EVP_PKEY_set1_EC_KEY(*pkey, eckey)) {
+             ^
+/usr/include/openssl/evp.h:1369:1: note: 'EVP_PKEY_set1_EC_KEY' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:220:3: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+                EC_KEY_free(eckey);
+                ^
+/usr/include/openssl/ec.h:1003:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:270:10: warning: 'EVP_PKEY_get1_EC_KEY' is deprecated [-Wdeprecated-declarations]
+        eckey = EVP_PKEY_get1_EC_KEY(key);
+                ^
+/usr/include/openssl/evp.h:1373:1: note: 'EVP_PKEY_get1_EC_KEY' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:282:9: warning: 'EC_KEY_get0_public_key' is deprecated [-Wdeprecated-declarations]
+        ecpt = EC_KEY_get0_public_key(eckey);
+               ^
+/usr/include/openssl/ec.h:1062:1: note: 'EC_KEY_get0_public_key' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 const EC_POINT *EC_KEY_get0_public_key(const EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:296:7: warning: 'EC_POINT_get_affine_coordinates_GFp' is deprecated [-Wdeprecated-declarations]
+        if (!EC_POINT_get_affine_coordinates_GFp(ecgroup, ecpt, gx, gy, NULL)) {
+             ^
+/usr/include/openssl/ec.h:659:1: note: 'EC_POINT_get_affine_coordinates_GFp' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int EC_POINT_get_affine_coordinates_GFp
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:319:3: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+                EC_KEY_free(eckey);
+                ^
+/usr/include/openssl/ec.h:1003:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:332:8: warning: 'EC_KEY_new_by_curve_name' is deprecated [-Wdeprecated-declarations]
+        key = EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
+              ^
+/usr/include/openssl/ec.h:998:1: note: 'EC_KEY_new_by_curve_name' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:343:7: warning: 'EC_KEY_set_private_key' is deprecated [-Wdeprecated-declarations]
+        if (!EC_KEY_set_private_key(key, prv)) {
+             ^
+/usr/include/openssl/ec.h:1056:1: note: 'EC_KEY_set_private_key' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_private_key(EC_KEY *key, const BIGNUM *prv);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:354:7: warning: 'EVP_PKEY_set1_EC_KEY' is deprecated [-Wdeprecated-declarations]
+        if (!EVP_PKEY_set1_EC_KEY(pkey, key)) {
+             ^
+/usr/include/openssl/evp.h:1369:1: note: 'EVP_PKEY_set1_EC_KEY' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:364:3: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+                EC_KEY_free(key);
+                ^
+/usr/include/openssl/ec.h:1003:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:391:8: warning: 'EC_KEY_new_by_curve_name' is deprecated [-Wdeprecated-declarations]
+        key = EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
+              ^
+/usr/include/openssl/ec.h:998:1: note: 'EC_KEY_new_by_curve_name' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 EC_KEY *EC_KEY_new_by_curve_name(int nid);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:397:7: warning: 'EC_KEY_set_public_key_affine_coordinates' is deprecated [-Wdeprecated-declarations]
+        if (!EC_KEY_set_public_key_affine_coordinates(key, gx, gy)) {
+             ^
+/usr/include/openssl/ec.h:1122:1: note: 'EC_KEY_set_public_key_affine_coordinates' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int EC_KEY_set_public_key_affine_coordinates(EC_KEY *key,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:398:3: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+                EC_KEY_free(key);
+                ^
+/usr/include/openssl/ec.h:1003:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:412:7: warning: 'EVP_PKEY_set1_EC_KEY' is deprecated [-Wdeprecated-declarations]
+        if (!EVP_PKEY_set1_EC_KEY(pkey, key)) {
+             ^
+/usr/include/openssl/evp.h:1369:1: note: 'EVP_PKEY_set1_EC_KEY' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:424:3: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+                EC_KEY_free(key);
+                ^
+/usr/include/openssl/ec.h:1003:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:558:18: warning: 'CMAC_CTX_new' is deprecated [-Wdeprecated-declarations]
+        CMAC_CTX* ctx = CMAC_CTX_new();
+                        ^
+/usr/include/openssl/cmac.h:32:1: note: 'CMAC_CTX_new' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 CMAC_CTX *CMAC_CTX_new(void);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:564:7: warning: 'CMAC_Init' is deprecated [-Wdeprecated-declarations]
+        if (!CMAC_Init(ctx, key, 16, EVP_aes_128_cbc(), NULL)) {
+             ^
+/usr/include/openssl/cmac.h:37:1: note: 'CMAC_Init' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int CMAC_Init(CMAC_CTX *ctx,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:569:7: warning: 'CMAC_Update' is deprecated [-Wdeprecated-declarations]
+        if (!CMAC_Update(ctx, message, mlen)) {
+             ^
+/usr/include/openssl/cmac.h:40:1: note: 'CMAC_Update' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int CMAC_Update(CMAC_CTX *ctx,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:574:7: warning: 'CMAC_Final' is deprecated [-Wdeprecated-declarations]
+        if (!CMAC_Final(ctx, mac, &maclen)) 
+             ^
+/usr/include/openssl/cmac.h:42:1: note: 'CMAC_Final' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 int CMAC_Final(CMAC_CTX *ctx,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:579:3: warning: 'CMAC_CTX_free' is deprecated [-Wdeprecated-declarations]
+                CMAC_CTX_free(ctx);
+                ^
+/usr/include/openssl/cmac.h:34:1: note: 'CMAC_CTX_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void CMAC_CTX_free(CMAC_CTX *ctx);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:672:10: warning: 'EVP_PKEY_get1_EC_KEY' is deprecated [-Wdeprecated-declarations]
+        eckey = EVP_PKEY_get1_EC_KEY(key);
+                ^
+/usr/include/openssl/evp.h:1373:1: note: 'EVP_PKEY_get1_EC_KEY' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:685:8: warning: 'ECDSA_do_sign' is deprecated [-Wdeprecated-declarations]
+        sig = ECDSA_do_sign(digest, 32, eckey);
+              ^
+/usr/include/openssl/ec.h:1365:1: note: 'ECDSA_do_sign' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 ECDSA_SIG *ECDSA_do_sign(const unsigned char *dgst,
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+/root/test/DEBE/Prototype/src/IASUtil/crypto.c:707:3: warning: 'EC_KEY_free' is deprecated [-Wdeprecated-declarations]
+                EC_KEY_free(eckey);
+                ^
+/usr/include/openssl/ec.h:1003:1: note: 'EC_KEY_free' has been explicitly marked deprecated here
+OSSL_DEPRECATEDIN_3_0 void EC_KEY_free(EC_KEY *key);
+^
+/usr/include/openssl/macros.h:182:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+#   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+                                                ^
+/usr/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+#     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+                                                   ^
+28 warnings generated.
+[ 12%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/hexutil.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/hexutil.c.o -MF CMakeFiles/IASCore.dir/hexutil.c.o.d -o CMakeFiles/IASCore.dir/hexutil.c.o -c /root/test/DEBE/Prototype/src/IASUtil/hexutil.c
+[ 13%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/iasrequest.cc.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/iasrequest.cc.o -MF CMakeFiles/IASCore.dir/iasrequest.cc.o.d -o CMakeFiles/IASCore.dir/iasrequest.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/iasrequest.cc
+In file included from /root/test/DEBE/Prototype/src/Database/absDatabase.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Database/../../include/absDatabase.h:14:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Prototype/src/../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+In file included from /root/test/DEBE/Prototype/src/Comm/sslConnect.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Comm/../../include/sslConnection.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Prototype/src/../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+1 warning and 1 error generated.
+make[2]: *** [src/Database/CMakeFiles/DatabaseCore.dir/build.make:79: src/Database/CMakeFiles/DatabaseCore.dir/absDatabase.cc.o] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[1]: *** [CMakeFiles/Makefile2:413: src/Database/CMakeFiles/DatabaseCore.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 15%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o -MF CMakeFiles/UtilCore.dir/compressGen.cc.o.d -o CMakeFiles/UtilCore.dir/compressGen.cc.o -c /root/test/DEBE/Prototype/src/Util/compressGen.cc
+1 warning and 1 error generated.
+make[2]: *** [src/Comm/CMakeFiles/CommCore.dir/build.make:79: src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[1]: *** [CMakeFiles/Makefile2:596: src/Comm/CMakeFiles/CommCore.dir/all] Error 2
+[ 16%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/configure.cc.o
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/Util/CMakeFiles/UtilCore.dir/configure.cc.o -MF CMakeFiles/UtilCore.dir/configure.cc.o.d -o CMakeFiles/UtilCore.dir/configure.cc.o -c /root/test/DEBE/Prototype/src/Util/configure.cc
+1 warning and 1 error generated.
+make[2]: *** [src/Util/CMakeFiles/UtilCore.dir/build.make:79: src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[ 17%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/json.cc.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/json.cc.o -MF CMakeFiles/IASCore.dir/json.cc.o.d -o CMakeFiles/IASCore.dir/json.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/json.cc
+[ 19%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/logfile.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/logfile.c.o -MF CMakeFiles/IASCore.dir/logfile.c.o.d -o CMakeFiles/IASCore.dir/logfile.c.o -c /root/test/DEBE/Prototype/src/IASUtil/logfile.c
+In file included from /root/test/DEBE/Prototype/src/Util/compressGen.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/compressGen.h:15:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Prototype/src/../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+1 warning and 1 error generated.
+make[2]: *** [src/Util/CMakeFiles/UtilCore.dir/build.make:93: src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o] Error 1
+[ 20%] Linking CXX static library ../../../lib/libIASCore.a
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/cmake -P CMakeFiles/IASCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/cmake -E cmake_link_script CMakeFiles/IASCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libIASCore.a CMakeFiles/IASCore.dir/agent_wget.cc.o CMakeFiles/IASCore.dir/base64.c.o CMakeFiles/IASCore.dir/byteorder.c.o CMakeFiles/IASCore.dir/common.cc.o CMakeFiles/IASCore.dir/crypto.c.o CMakeFiles/IASCore.dir/hexutil.c.o CMakeFiles/IASCore.dir/iasrequest.cc.o CMakeFiles/IASCore.dir/json.cc.o CMakeFiles/IASCore.dir/logfile.c.o
+/usr/bin/llvm-ranlib ../../../lib/libIASCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 20%] Built target IASCore
+In file included from /root/test/DEBE/Prototype/src/Util/configure.cc:11:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Prototype/src/../include/define.h:173:21: error: no member named 'filesystem' in namespace 'std'
+        return std::filesystem::is_regular_file(filePath);
+               ~~~~~^
+1 warning and 1 error generated.
+make[2]: *** [src/Util/CMakeFiles/UtilCore.dir/build.make:107: src/Util/CMakeFiles/UtilCore.dir/configure.cc.o] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[1]: *** [CMakeFiles/Makefile2:387: src/Util/CMakeFiles/UtilCore.dir/all] Error 2
+make[1]: Leaving directory '/root/test/DEBE/Prototype/build'
+make: *** [Makefile:94: all] Error 2
