@@ -1,0 +1,12 @@
+[100%] Linking CXX executable ../../../bin/DEBEClient
+cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/cmake -E cmake_link_script CMakeFiles/DEBEClient.dir/link.txt --verbose=1
+/usr/bin/clang++ -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -rdynamic CMakeFiles/DEBEClient.dir/dbeClient.cc.o -o ../../../bin/DEBEClient   -L/usr/lib/x86_64-linux-gnu/libleveldb.so  -L/root/test/DEBE/Prototype/src/../lib  -L/opt/intel/sgxssl/lib64  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libleveldb.so:/root/test/DEBE/Prototype/src/../lib:/opt/intel/sgxssl/lib64 -lssl -lcrypto -lleveldb -lboost_thread -lboost_system -lboost_serialization -lpthread -ljemalloc ../../../lib/libEnclaveCore.a ../../../lib/libUtilCore.a ../../../lib/libDatabaseCore.a ../../../lib/libIndexCore.a ../../../lib/libCommCore.a ../../../lib/libIASCore.a ../../../lib/libClientCore.a ../../../lib/libServerCore.a ../../../lib/libIndexCore.a ../../../lib/libServerCore.a -lssl -lcrypto -lleveldb -lboost_thread -lboost_system -lboost_serialization -ljemalloc ../../../lib/libUtilCore.a -lpthread ../../../lib/libEnclaveCore.a -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG                                          -L/opt/intel/sgxsdk/lib64                                          -lsgx_urts                                          -lsgx_uae_service                                          -lsgx_ukey_exchange                                          -lpthread -lsgx_urts -lsgx_uae_service -lsgx_capable -lsgx_usgxssl ../../../lib/libCommCore.a ../../../lib/libIASCore.a 
+/usr/bin/ld: ../../../lib/libClientCore.a(sessionKeyExchange.cc.o): in function `SessionKeyExchange::GeneratingSecret(unsigned char*, ssl_st*, unsigned int)':
+sessionKeyExchange.cc:(.text+0x3a2): undefined reference to `EVP_PKEY_get1_tls_encodedpoint'
+/usr/bin/ld: sessionKeyExchange.cc:(.text+0x45a): undefined reference to `EVP_PKEY_set1_tls_encodedpoint'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [src/App/CMakeFiles/DEBEClient.dir/build.make:114: ../bin/DEBEClient] Error 1
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[1]: *** [CMakeFiles/Makefile2:308: src/App/CMakeFiles/DEBEClient.dir/all] Error 2
+make[1]: Leaving directory '/root/test/DEBE/Prototype/build'
+make: *** [Makefile:94: all] Error 2
