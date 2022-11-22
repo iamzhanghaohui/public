@@ -1,3 +1,621 @@
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMAKE MODULE Path: /usr/share/cmake-3.16/Modules/;/root/test/DEBE/Prototype/cmake
+CMake Deprecation Warning at cmake/FindSGX.cmake:3 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  src/CMakeLists.txt:1 (find_package)
+
+
+-- Found Intel SGX SDK.
+-- Found Intel SGX SSL.
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.36.0") found components: thread system serialization 
+-- Found LevelDB: /usr/include  
+-- Found LevelDB (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libleveldb.so)
+-- Found OpenSSL: /usr/local/lib/libcrypto.so (found version "1.1.1q")  
+-- Find LevelDB version: 1.23
+-- Find OpenSSL version: 1.1.1q
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/test/DEBE/Prototype/build
+/usr/bin/cmake -S/root/test/DEBE/Prototype -B/root/test/DEBE/Prototype/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/test/DEBE/Prototype/build/CMakeFiles /root/test/DEBE/Prototype/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/root/test/DEBE/Prototype/build'
+make  -f src/IASUtil/CMakeFiles/IASCore.dir/build.make src/IASUtil/CMakeFiles/IASCore.dir/depend
+make  -f src/Comm/CMakeFiles/CommCore.dir/build.make src/Comm/CMakeFiles/CommCore.dir/depend
+make  -f src/Util/CMakeFiles/UtilCore.dir/build.make src/Util/CMakeFiles/UtilCore.dir/depend
+make  -f src/Database/CMakeFiles/DatabaseCore.dir/build.make src/Database/CMakeFiles/DatabaseCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/IASUtil /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/IASUtil /root/test/DEBE/Prototype/build/src/IASUtil/CMakeFiles/IASCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Comm /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Comm /root/test/DEBE/Prototype/build/src/Comm/CMakeFiles/CommCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Util /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Util /root/test/DEBE/Prototype/build/src/Util/CMakeFiles/UtilCore.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Database /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Database /root/test/DEBE/Prototype/build/src/Database/CMakeFiles/DatabaseCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Comm/CMakeFiles/CommCore.dir/build.make src/Comm/CMakeFiles/CommCore.dir/build
+make  -f src/IASUtil/CMakeFiles/IASCore.dir/build.make src/IASUtil/CMakeFiles/IASCore.dir/build
+make  -f src/Util/CMakeFiles/UtilCore.dir/build.make src/Util/CMakeFiles/UtilCore.dir/build
+make  -f src/Database/CMakeFiles/DatabaseCore.dir/build.make src/Database/CMakeFiles/DatabaseCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[  5%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o
+[  5%] Building CXX object src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o
+[  5%] Building CXX object src/Database/CMakeFiles/DatabaseCore.dir/absDatabase.cc.o
+[  5%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/agent_wget.cc.o
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Database/CMakeFiles/DatabaseCore.dir/absDatabase.cc.o -MF CMakeFiles/DatabaseCore.dir/absDatabase.cc.o.d -o CMakeFiles/DatabaseCore.dir/absDatabase.cc.o -c /root/test/DEBE/Prototype/src/Database/absDatabase.cc
+cd /root/test/DEBE/Prototype/build/src/Comm && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Comm/CMakeFiles/CommCore.dir/sslConnect.cc.o -MF CMakeFiles/CommCore.dir/sslConnect.cc.o.d -o CMakeFiles/CommCore.dir/sslConnect.cc.o -c /root/test/DEBE/Prototype/src/Comm/sslConnect.cc
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Util/CMakeFiles/UtilCore.dir/clientVar.cc.o -MF CMakeFiles/UtilCore.dir/clientVar.cc.o.d -o CMakeFiles/UtilCore.dir/clientVar.cc.o -c /root/test/DEBE/Prototype/src/Util/clientVar.cc
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/agent_wget.cc.o -MF CMakeFiles/IASCore.dir/agent_wget.cc.o.d -o CMakeFiles/IASCore.dir/agent_wget.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/agent_wget.cc
+[  6%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/base64.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/base64.c.o -MF CMakeFiles/IASCore.dir/base64.c.o.d -o CMakeFiles/IASCore.dir/base64.c.o -c /root/test/DEBE/Prototype/src/IASUtil/base64.c
+[  8%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/byteorder.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/byteorder.c.o -MF CMakeFiles/IASCore.dir/byteorder.c.o.d -o CMakeFiles/IASCore.dir/byteorder.c.o -c /root/test/DEBE/Prototype/src/IASUtil/byteorder.c
+[  9%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/common.cc.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/common.cc.o -MF CMakeFiles/IASCore.dir/common.cc.o.d -o CMakeFiles/IASCore.dir/common.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/common.cc
+In file included from /root/test/DEBE/Prototype/src/Util/clientVar.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/clientVar.h:15:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+[ 10%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/crypto.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/crypto.c.o -MF CMakeFiles/IASCore.dir/crypto.c.o.d -o CMakeFiles/IASCore.dir/crypto.c.o -c /root/test/DEBE/Prototype/src/IASUtil/crypto.c
+[ 12%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/hexutil.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/hexutil.c.o -MF CMakeFiles/IASCore.dir/hexutil.c.o.d -o CMakeFiles/IASCore.dir/hexutil.c.o -c /root/test/DEBE/Prototype/src/IASUtil/hexutil.c
+[ 13%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/iasrequest.cc.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/iasrequest.cc.o -MF CMakeFiles/IASCore.dir/iasrequest.cc.o.d -o CMakeFiles/IASCore.dir/iasrequest.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/iasrequest.cc
+In file included from In file included from /root/test/DEBE/Prototype/src/Comm/sslConnect.cc/root/test/DEBE/Prototype/src/Database/absDatabase.cc::1212:
+:
+In file included from In file included from /root/test/DEBE/Prototype/src/Comm/../../include/sslConnection.h/root/test/DEBE/Prototype/src/Database/../../include/absDatabase.h::1514:
+:
+In file included from In file included from /root/test/DEBE/Prototype/src/../include/configure.h/root/test/DEBE/Prototype/src/../include/configure.h::1717:
+:
+/root/test/DEBE/Prototype/src/../include/define.h/root/test/DEBE/Prototype/src/../include/define.h::126126::1818::  warning: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+
+        uint64_t vm_usage     = 0;        uint64_t vm_usage     = 0;
+
+                 ^                 ^
+
+1 warning generated.
+[ 15%] Building CXX object src/Database/CMakeFiles/DatabaseCore.dir/factoryDatabase.cc.o
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Database/CMakeFiles/DatabaseCore.dir/factoryDatabase.cc.o -MF CMakeFiles/DatabaseCore.dir/factoryDatabase.cc.o.d -o CMakeFiles/DatabaseCore.dir/factoryDatabase.cc.o -c /root/test/DEBE/Prototype/src/Database/factoryDatabase.cc
+1 warning generated.
+[ 16%] Linking CXX static library ../../../lib/libCommCore.a
+cd /root/test/DEBE/Prototype/build/src/Comm && /usr/bin/cmake -P CMakeFiles/CommCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Comm && /usr/bin/cmake -E cmake_link_script CMakeFiles/CommCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libCommCore.a CMakeFiles/CommCore.dir/sslConnect.cc.o
+/usr/bin/llvm-ranlib ../../../lib/libCommCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 16%] Built target CommCore
+[ 17%] Building CXX object src/Database/CMakeFiles/DatabaseCore.dir/inMemoryDatabase.cc.o
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Database/CMakeFiles/DatabaseCore.dir/inMemoryDatabase.cc.o -MF CMakeFiles/DatabaseCore.dir/inMemoryDatabase.cc.o.d -o CMakeFiles/DatabaseCore.dir/inMemoryDatabase.cc.o -c /root/test/DEBE/Prototype/src/Database/inMemoryDatabase.cc
+[ 19%] Building CXX object src/IASUtil/CMakeFiles/IASCore.dir/json.cc.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/json.cc.o -MF CMakeFiles/IASCore.dir/json.cc.o.d -o CMakeFiles/IASCore.dir/json.cc.o -c /root/test/DEBE/Prototype/src/IASUtil/json.cc
+1 warning generated.
+[ 20%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Util/CMakeFiles/UtilCore.dir/compressGen.cc.o -MF CMakeFiles/UtilCore.dir/compressGen.cc.o.d -o CMakeFiles/UtilCore.dir/compressGen.cc.o -c /root/test/DEBE/Prototype/src/Util/compressGen.cc
+[ 21%] Building C object src/IASUtil/CMakeFiles/IASCore.dir/logfile.c.o
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -MD -MT src/IASUtil/CMakeFiles/IASCore.dir/logfile.c.o -MF CMakeFiles/IASCore.dir/logfile.c.o.d -o CMakeFiles/IASCore.dir/logfile.c.o -c /root/test/DEBE/Prototype/src/IASUtil/logfile.c
+[ 23%] Linking CXX static library ../../../lib/libIASCore.a
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/cmake -P CMakeFiles/IASCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/IASUtil && /usr/bin/cmake -E cmake_link_script CMakeFiles/IASCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libIASCore.a CMakeFiles/IASCore.dir/agent_wget.cc.o CMakeFiles/IASCore.dir/base64.c.o CMakeFiles/IASCore.dir/byteorder.c.o CMakeFiles/IASCore.dir/common.cc.o CMakeFiles/IASCore.dir/crypto.c.o CMakeFiles/IASCore.dir/hexutil.c.o CMakeFiles/IASCore.dir/iasrequest.cc.o CMakeFiles/IASCore.dir/json.cc.o CMakeFiles/IASCore.dir/logfile.c.o
+/usr/bin/llvm-ranlib ../../../lib/libIASCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 23%] Built target IASCore
+make  -f src/Enclave/CMakeFiles/EnclaveCore.dir/build.make src/Enclave/CMakeFiles/EnclaveCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 24%] Generating storeEnclave_u.c
+cd /root/test/DEBE/Prototype/build/src/Enclave && /opt/intel/sgxsdk/bin/x64/sgx_edger8r --untrusted /root/test/DEBE/Prototype/src/Enclave/storeEnclave.edl --search-path /opt/intel/sgxssl/include:/opt/intel/sgxsdk/include:/opt/intel/sgxsdk/include
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Enclave /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Enclave /root/test/DEBE/Prototype/build/src/Enclave/CMakeFiles/EnclaveCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Enclave/CMakeFiles/EnclaveCore.dir/build.make src/Enclave/CMakeFiles/EnclaveCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 26%] Building CXX object src/Enclave/CMakeFiles/EnclaveCore.dir/ocallSrc/ocallUtil.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -fPIC -Wno-attributes  -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/EnclaveCore.dir/ocallSrc/ocallUtil.cc.o -MF CMakeFiles/EnclaveCore.dir/ocallSrc/ocallUtil.cc.o.d -o CMakeFiles/EnclaveCore.dir/ocallSrc/ocallUtil.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ocallSrc/ocallUtil.cc
+[ 27%] Building CXX object src/Enclave/CMakeFiles/EnclaveCore.dir/ocallSrc/storeOCall.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -fPIC -Wno-attributes  -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/EnclaveCore.dir/ocallSrc/storeOCall.cc.o -MF CMakeFiles/EnclaveCore.dir/ocallSrc/storeOCall.cc.o.d -o CMakeFiles/EnclaveCore.dir/ocallSrc/storeOCall.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ocallSrc/storeOCall.cc
+In file included from /root/test/DEBE/Prototype/src/Database/factoryDatabase.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Database/../../include/factoryDatabase.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/absDatabase.h:14:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Util/compressGen.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/compressGen.h:15:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+[ 28%] Building CXX object src/Database/CMakeFiles/DatabaseCore.dir/leveldbDatabase.cc.o
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Database/CMakeFiles/DatabaseCore.dir/leveldbDatabase.cc.o -MF CMakeFiles/DatabaseCore.dir/leveldbDatabase.cc.o.d -o CMakeFiles/DatabaseCore.dir/leveldbDatabase.cc.o -c /root/test/DEBE/Prototype/src/Database/leveldbDatabase.cc
+In file included from /root/test/DEBE/Prototype/src/Database/inMemoryDatabase.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Database/../../include/inMemoryDatabase.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/absDatabase.h:14:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+[ 30%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/configure.cc.o
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Util/CMakeFiles/UtilCore.dir/configure.cc.o -MF CMakeFiles/UtilCore.dir/configure.cc.o.d -o CMakeFiles/UtilCore.dir/configure.cc.o -c /root/test/DEBE/Prototype/src/Util/configure.cc
+1 warning generated.
+[ 31%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/cryptoPrimitive.cc.o
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Util/CMakeFiles/UtilCore.dir/cryptoPrimitive.cc.o -MF CMakeFiles/UtilCore.dir/cryptoPrimitive.cc.o.d -o CMakeFiles/UtilCore.dir/cryptoPrimitive.cc.o -c /root/test/DEBE/Prototype/src/Util/cryptoPrimitive.cc
+In file included from /root/test/DEBE/Prototype/src/Enclave/ocallSrc/storeOCall.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Enclave/ocallSrc/../include/storeOCall.h:5:
+In file included from /root/test/DEBE/Prototype/src/Enclave/include/../../../include/storageCore.h:4:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Database/leveldbDatabase.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Database/../../include/leveldbDatabase.h:14:
+In file included from /root/test/DEBE/Prototype/src/../include/absDatabase.h:14:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Util/configure.cc:11:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+[ 32%] Linking CXX static library ../../../lib/libDatabaseCore.a
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/cmake -P CMakeFiles/DatabaseCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Database && /usr/bin/cmake -E cmake_link_script CMakeFiles/DatabaseCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libDatabaseCore.a CMakeFiles/DatabaseCore.dir/absDatabase.cc.o CMakeFiles/DatabaseCore.dir/factoryDatabase.cc.o CMakeFiles/DatabaseCore.dir/inMemoryDatabase.cc.o CMakeFiles/DatabaseCore.dir/leveldbDatabase.cc.o
+/usr/bin/llvm-ranlib ../../../lib/libDatabaseCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 32%] Built target DatabaseCore
+make  -f src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/build.make src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 34%] Generating storeEnclave_t.c
+cd /root/test/DEBE/Prototype/build/src/Enclave && /opt/intel/sgxsdk/bin/x64/sgx_edger8r --trusted /root/test/DEBE/Prototype/src/Enclave/storeEnclave.edl --search-path /opt/intel/sgxssl/include:/opt/intel/sgxsdk/include:/opt/intel/sgxsdk/include
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Enclave /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Enclave /root/test/DEBE/Prototype/build/src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/build.make src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 35%] Building C object src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/storeEnclave_t.c.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -MD -MT src/Enclave/CMakeFiles/storeEnclave-edlobj.dir/storeEnclave_t.c.o -MF CMakeFiles/storeEnclave-edlobj.dir/storeEnclave_t.c.o.d -o CMakeFiles/storeEnclave-edlobj.dir/storeEnclave_t.c.o -c /root/test/DEBE/Prototype/build/src/Enclave/storeEnclave_t.c
+In file included from /root/test/DEBE/Prototype/build/src/Enclave/storeEnclave_t.c:1:
+In file included from /root/test/DEBE/Prototype/src/../build/src/Enclave/storeEnclave_t.h:12:
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:20:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t data[MAX_CHUNK_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:38:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkHash[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:45:12: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+   uint8_t minHash[CHUNK_HASH_SIZE];
+           ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:51:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t containerName[CONTAINER_ID_LENGTH]; 
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:105:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t containerName[CONTAINER_ID_LENGTH]; 
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:110:10: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    char containerID[CONTAINER_ID_LENGTH];
+         ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:111:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t body[MAX_CONTAINER_SIZE]; 
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:116:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t segmentHash[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:117:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t binID_[SEGMENT_ID_LENGTH];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:121:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkFp[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:133:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkHash[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:139:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkHash[CHUNK_HASH_SIZE];
+            ^
+In file included from /root/test/DEBE/Prototype/src/Util/cryptoPrimitive.cc:1:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/cryptoPrimitive.h:17:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+12 warnings generated.
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 35%] Built target storeEnclave-edlobj
+[ 36%] Building CXX object src/Util/CMakeFiles/UtilCore.dir/readCache.cc.o
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Util/CMakeFiles/UtilCore.dir/readCache.cc.o -MF CMakeFiles/UtilCore.dir/readCache.cc.o.d -o CMakeFiles/UtilCore.dir/readCache.cc.o -c /root/test/DEBE/Prototype/src/Util/readCache.cc
+1 warning generated.
+1 warning generated.
+make  -f src/Client/CMakeFiles/ClientCore.dir/build.make src/Client/CMakeFiles/ClientCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Client /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Client /root/test/DEBE/Prototype/build/src/Client/CMakeFiles/ClientCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Client/CMakeFiles/ClientCore.dir/build.make src/Client/CMakeFiles/ClientCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 38%] Building C object src/Enclave/CMakeFiles/EnclaveCore.dir/storeEnclave_u.c.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -fPIC -Wno-attributes  -MD -MT src/Enclave/CMakeFiles/EnclaveCore.dir/storeEnclave_u.c.o -MF CMakeFiles/EnclaveCore.dir/storeEnclave_u.c.o.d -o CMakeFiles/EnclaveCore.dir/storeEnclave_u.c.o -c /root/test/DEBE/Prototype/build/src/Enclave/storeEnclave_u.c
+[ 39%] Building CXX object src/Client/CMakeFiles/ClientCore.dir/chunker.cc.o
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Client/CMakeFiles/ClientCore.dir/chunker.cc.o -MF CMakeFiles/ClientCore.dir/chunker.cc.o.d -o CMakeFiles/ClientCore.dir/chunker.cc.o -c /root/test/DEBE/Prototype/src/Client/chunker.cc
+In file included from /root/test/DEBE/Prototype/build/src/Enclave/storeEnclave_u.c:1:
+In file included from /root/test/DEBE/Prototype/src/../build/src/Enclave/storeEnclave_u.h:13:
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:20:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t data[MAX_CHUNK_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:38:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkHash[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:45:12: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+   uint8_t minHash[CHUNK_HASH_SIZE];
+           ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:51:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t containerName[CONTAINER_ID_LENGTH]; 
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:105:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t containerName[CONTAINER_ID_LENGTH]; 
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:110:10: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    char containerID[CONTAINER_ID_LENGTH];
+         ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:111:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t body[MAX_CONTAINER_SIZE]; 
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:116:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t segmentHash[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:117:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t binID_[SEGMENT_ID_LENGTH];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:121:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkFp[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:133:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkHash[CHUNK_HASH_SIZE];
+            ^
+/root/test/DEBE/Prototype/src/../include/chunkStructure.h:139:13: warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+    uint8_t chunkHash[CHUNK_HASH_SIZE];
+            ^
+12 warnings generated.
+[ 41%] Linking CXX static library ../../../lib/libEnclaveCore.a
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/cmake -P CMakeFiles/EnclaveCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/cmake -E cmake_link_script CMakeFiles/EnclaveCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libEnclaveCore.a CMakeFiles/EnclaveCore.dir/ocallSrc/ocallUtil.cc.o CMakeFiles/EnclaveCore.dir/ocallSrc/storeOCall.cc.o CMakeFiles/EnclaveCore.dir/storeEnclave_u.c.o
+/usr/bin/llvm-ranlib ../../../lib/libEnclaveCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 41%] Built target EnclaveCore
+[ 42%] Building CXX object src/Client/CMakeFiles/ClientCore.dir/dataRetriever.cc.o
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Client/CMakeFiles/ClientCore.dir/dataRetriever.cc.o -MF CMakeFiles/ClientCore.dir/dataRetriever.cc.o.d -o CMakeFiles/ClientCore.dir/dataRetriever.cc.o -c /root/test/DEBE/Prototype/src/Client/dataRetriever.cc
+1 warning generated.
+[ 43%] Building CXX object src/Client/CMakeFiles/ClientCore.dir/dataSender.cc.o
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Client/CMakeFiles/ClientCore.dir/dataSender.cc.o -MF CMakeFiles/ClientCore.dir/dataSender.cc.o.d -o CMakeFiles/ClientCore.dir/dataSender.cc.o -c /root/test/DEBE/Prototype/src/Client/dataSender.cc
+In file included from /root/test/DEBE/Prototype/src/Client/chunker.cc:13:
+In file included from /root/test/DEBE/Prototype/src/Client/../../include/chunker.h:14:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Util/readCache.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Util/../../include/readCache.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Client/dataRetriever.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Client/../../include/dataRetriever.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+[ 45%] Linking CXX static library ../../../lib/libUtilCore.a
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/cmake -P CMakeFiles/UtilCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Util && /usr/bin/cmake -E cmake_link_script CMakeFiles/UtilCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libUtilCore.a CMakeFiles/UtilCore.dir/clientVar.cc.o CMakeFiles/UtilCore.dir/compressGen.cc.o CMakeFiles/UtilCore.dir/configure.cc.o CMakeFiles/UtilCore.dir/cryptoPrimitive.cc.o CMakeFiles/UtilCore.dir/readCache.cc.o
+/usr/bin/llvm-ranlib ../../../lib/libUtilCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 45%] Built target UtilCore
+make  -f src/Enclave/CMakeFiles/storeEnclave.dir/build.make src/Enclave/CMakeFiles/storeEnclave.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Enclave /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Enclave /root/test/DEBE/Prototype/build/src/Enclave/CMakeFiles/storeEnclave.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Enclave/CMakeFiles/storeEnclave.dir/build.make src/Enclave/CMakeFiles/storeEnclave.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 46%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/RAECall.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/RAECall.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecall/RAECall.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/RAECall.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecall/RAECall.cc
+In file included from /root/test/DEBE/Prototype/src/Client/dataSender.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Client/../../include/dataSender.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+1 warning generated.
+[ 47%] Building CXX object src/Client/CMakeFiles/ClientCore.dir/raVerifier.cc.o
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Client/CMakeFiles/ClientCore.dir/raVerifier.cc.o -MF CMakeFiles/ClientCore.dir/raVerifier.cc.o.d -o CMakeFiles/ClientCore.dir/raVerifier.cc.o -c /root/test/DEBE/Prototype/src/Client/raVerifier.cc
+[ 49%] Building CXX object src/Client/CMakeFiles/ClientCore.dir/restoreWriter.cc.o
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Client/CMakeFiles/ClientCore.dir/restoreWriter.cc.o -MF CMakeFiles/ClientCore.dir/restoreWriter.cc.o.d -o CMakeFiles/ClientCore.dir/restoreWriter.cc.o -c /root/test/DEBE/Prototype/src/Client/restoreWriter.cc
+[ 50%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/keyECall.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/keyECall.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecall/keyECall.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/keyECall.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecall/keyECall.cc
+[ 52%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/restoreECall.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/restoreECall.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecall/restoreECall.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/restoreECall.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecall/restoreECall.cc
+1 warning generated.
+[ 53%] Building CXX object src/Client/CMakeFiles/ClientCore.dir/sessionKeyExchange.cc.o
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Client/CMakeFiles/ClientCore.dir/sessionKeyExchange.cc.o -MF CMakeFiles/ClientCore.dir/sessionKeyExchange.cc.o.d -o CMakeFiles/ClientCore.dir/sessionKeyExchange.cc.o -c /root/test/DEBE/Prototype/src/Client/sessionKeyExchange.cc
+[ 54%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/storeECall.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecall/storeECall.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecall/storeECall.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/storeECall.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecall/storeECall.cc
+[ 56%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallExtreme.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallExtreme.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallExtreme.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallExtreme.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallIndex/ecallExtreme.cc
+In file included from /root/test/DEBE/Prototype/src/Client/restoreWriter.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Client/../../include/restoreWriter.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Client/raVerifier.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Client/../../include/raVerifier.h:16:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+[ 57%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallFreqIndex.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallFreqIndex.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallFreqIndex.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallFreqIndex.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallIndex/ecallFreqIndex.cc
+1 warning generated.
+[ 58%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallInEnclave.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallInEnclave.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallInEnclave.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallInEnclave.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallIndex/ecallInEnclave.cc
+In file included from /root/test/DEBE/Prototype/src/Client/sessionKeyExchange.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Client/../../include/sessionKeyExchange.h:18:
+In file included from /root/test/DEBE/Prototype/src/../include/cryptoPrimitive.h:17:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+[ 60%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallOutEnclave.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallOutEnclave.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallOutEnclave.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallOutEnclave.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallIndex/ecallOutEnclave.cc
+1 warning generated.
+[ 61%] Linking CXX static library ../../../lib/libClientCore.a
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/cmake -P CMakeFiles/ClientCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Client && /usr/bin/cmake -E cmake_link_script CMakeFiles/ClientCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libClientCore.a CMakeFiles/ClientCore.dir/chunker.cc.o CMakeFiles/ClientCore.dir/dataRetriever.cc.o CMakeFiles/ClientCore.dir/dataSender.cc.o CMakeFiles/ClientCore.dir/raVerifier.cc.o CMakeFiles/ClientCore.dir/restoreWriter.cc.o CMakeFiles/ClientCore.dir/sessionKeyExchange.cc.o
+/usr/bin/llvm-ranlib ../../../lib/libClientCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 61%] Built target ClientCore
+make  -f src/Index/CMakeFiles/IndexCore.dir/build.make src/Index/CMakeFiles/IndexCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Index /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Index /root/test/DEBE/Prototype/build/src/Index/CMakeFiles/IndexCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Index/CMakeFiles/IndexCore.dir/build.make src/Index/CMakeFiles/IndexCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 63%] Building CXX object src/Index/CMakeFiles/IndexCore.dir/absIndex.cc.o
+cd /root/test/DEBE/Prototype/build/src/Index && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Index/CMakeFiles/IndexCore.dir/absIndex.cc.o -MF CMakeFiles/IndexCore.dir/absIndex.cc.o.d -o CMakeFiles/IndexCore.dir/absIndex.cc.o -c /root/test/DEBE/Prototype/src/Index/absIndex.cc
+[ 64%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallSparse.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallSparse.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallSparse.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallSparse.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallIndex/ecallSparse.cc
+[ 65%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/enclaveBase.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/enclaveBase.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/enclaveBase.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/enclaveBase.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallIndex/enclaveBase.cc
+[ 67%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallRecvDecoder.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallRecvDecoder.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallRecvDecoder.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallRecvDecoder.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallStore/ecallRecvDecoder.cc
+[ 68%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallStorage.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallStorage.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallStorage.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallStorage.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallStore/ecallStorage.cc
+[ 69%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/commonEnclave.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/commonEnclave.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/commonEnclave.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/commonEnclave.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallUtil/commonEnclave.cc
+[ 71%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallCMSketch.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallCMSketch.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallCMSketch.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallCMSketch.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallUtil/ecallCMSketch.cc
+[ 72%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallClient.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallClient.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallClient.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallClient.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallUtil/ecallClient.cc
+[ 73%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEnc.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEnc.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEnc.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEnc.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallUtil/ecallEnc.cc
+[ 75%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEntryHeap.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEntryHeap.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEntryHeap.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEntryHeap.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallUtil/ecallEntryHeap.cc
+In file included from /root/test/DEBE/Prototype/src/Index/absIndex.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Index/../../include/absIndex.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+[ 76%] Building CXX object src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallLz4.cc.o
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/clang++ -DstoreEnclave_EXPORTS -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -I/root/test/DEBE/Prototype/src/Enclave/include -I/root/test/DEBE/Prototype/build/src/Enclave -I/opt/intel/sgxsdk/include/tlibc -I/opt/intel/sgxsdk/include/libcxx -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -fPIC -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG -nostdinc -fvisibility=hidden -fpie -fstack-protector-strong -nostdinc++ -std=gnu++17 -MD -MT src/Enclave/CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallLz4.cc.o -MF CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallLz4.cc.o.d -o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallLz4.cc.o -c /root/test/DEBE/Prototype/src/Enclave/ecallSrc/ecallUtil/ecallLz4.cc
+[ 78%] Building CXX object src/Index/CMakeFiles/IndexCore.dir/enclaveIndex.cc.o
+cd /root/test/DEBE/Prototype/build/src/Index && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Index/CMakeFiles/IndexCore.dir/enclaveIndex.cc.o -MF CMakeFiles/IndexCore.dir/enclaveIndex.cc.o.d -o CMakeFiles/IndexCore.dir/enclaveIndex.cc.o -c /root/test/DEBE/Prototype/src/Index/enclaveIndex.cc
+make  -f src/App/CMakeFiles/compressSYN.dir/build.make src/App/CMakeFiles/compressSYN.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/App /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/App /root/test/DEBE/Prototype/build/src/App/CMakeFiles/compressSYN.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/App/CMakeFiles/compressSYN.dir/build.make src/App/CMakeFiles/compressSYN.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 79%] Building CXX object src/App/CMakeFiles/compressSYN.dir/synCompress.cc.o
+cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/App/CMakeFiles/compressSYN.dir/synCompress.cc.o -MF CMakeFiles/compressSYN.dir/synCompress.cc.o.d -o CMakeFiles/compressSYN.dir/synCompress.cc.o -c /root/test/DEBE/Prototype/src/App/synCompress.cc
+1 warning generated.
+In file included from /root/test/DEBE/Prototype/src/App/synCompress.cc:14:
+/root/test/DEBE/Prototype/src/App/../../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Index/enclaveIndex.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Index/../../include/enclaveIndex.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/absIndex.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+[ 80%] Linking CXX shared library ../../../lib/libstoreEnclave.so
+cd /root/test/DEBE/Prototype/build/src/Enclave && /usr/bin/cmake -E cmake_link_script CMakeFiles/storeEnclave.dir/link.txt --verbose=1
+/usr/bin/clang++ -fPIC -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -shared -Wl,-soname,libstoreEnclave.so -o ../../../lib/libstoreEnclave.so CMakeFiles/storeEnclave.dir/ecallSrc/ecall/RAECall.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/keyECall.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/restoreECall.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecall/storeECall.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallExtreme.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallFreqIndex.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallInEnclave.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallOutEnclave.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/ecallSparse.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallIndex/enclaveBase.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallRecvDecoder.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallStore/ecallStorage.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/commonEnclave.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallCMSketch.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallClient.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEnc.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallEntryHeap.cc.o CMakeFiles/storeEnclave.dir/ecallSrc/ecallUtil/ecallLz4.cc.o CMakeFiles/storeEnclave-edlobj.dir/storeEnclave_t.c.o   -L/usr/lib/x86_64-linux-gnu/libleveldb.so  -L/root/test/DEBE/Prototype/src/../lib  -L/opt/intel/sgxssl/lib64  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libleveldb.so:/root/test/DEBE/Prototype/src/../lib:/opt/intel/sgxssl/lib64 -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG                 -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L/opt/intel/sgxsdk/lib64 -L/opt/intel/sgxssl/lib64                 -Wl,--whole-archive -lsgx_trts -Wl,--no-whole-archive                 -Wl,--whole-archive -lsgx_tcmalloc -Wl,--no-whole-archive                 -Wl,--whole-archive -lsgx_tsgxssl -Wl,--no-whole-archive -lsgx_tsgxssl_crypto                 -Wl,--start-group  -lsgx_tstdc -lsgx_pthread -lsgx_tcxx -lsgx_tkey_exchange -lsgx_tcrypto -lsgx_tservice -Wl,--end-group                 -Wl,-Bstatic -Wl,-Bsymbolic -Wl,--no-undefined                 -Wl,-pie,-eenclave_entry -Wl,--export-dynamic                 -Wl,--version-script=/root/test/DEBE/Prototype/src/Enclave/storeEnclave.lds                 -Wl,--defsym,__ImageBase=0 
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 80%] Built target storeEnclave
+make  -f src/Enclave/CMakeFiles/storeEnclave-sign.dir/build.make src/Enclave/CMakeFiles/storeEnclave-sign.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Enclave /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Enclave /root/test/DEBE/Prototype/build/src/Enclave/CMakeFiles/storeEnclave-sign.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Enclave/CMakeFiles/storeEnclave-sign.dir/build.make src/Enclave/CMakeFiles/storeEnclave-sign.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build/src/Enclave && /opt/intel/sgxsdk/bin/x64/sgx_sign sign -key /root/test/DEBE/Prototype/src/Enclave/storeEnclave.pem -config /root/test/DEBE/Prototype/src/Enclave/storeEnclave.config.xml -enclave /root/test/DEBE/Prototype/lib/libstoreEnclave.so -out /root/test/DEBE/Prototype/lib/storeEnclave.signed.so
+<EnclaveConfiguration>
+    <ProdID>0</ProdID>
+    <ISVSVN>0</ISVSVN>
+    <StackMaxSize>0x800000</StackMaxSize>
+    <StackMinSize>0x100000</StackMinSize>
+    <HeapMaxSize>0x8000000</HeapMaxSize>
+    <HeapMinSize>0x8000000</HeapMinSize>
+    <TCSNum>1</TCSNum>
+    <TCSMaxNum>1</TCSMaxNum>
+    <TCSMinPool>1</TCSMinPool>
+    <TCSPolicy>1</TCSPolicy>
+    <DisableDebug>0</DisableDebug>
+    <MiscSelect>0</MiscSelect>
+    <MiscMask>0xFFFFFFFF</MiscMask>
+</EnclaveConfiguration>
+tcs_num 1, tcs_max_num 1, tcs_min_pool 1
+The required memory is 148127744B.
+The required memory is 0x8d44000, 144656 KB.
+Succeed.
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 80%] Built target storeEnclave-sign
+1 warning generated.
+[ 82%] Linking CXX executable ../../../bin/compressSYN
+cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/cmake -E cmake_link_script CMakeFiles/compressSYN.dir/link.txt --verbose=1
+/usr/bin/clang++ -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -rdynamic CMakeFiles/compressSYN.dir/synCompress.cc.o -o ../../../bin/compressSYN   -L/usr/lib/x86_64-linux-gnu/libleveldb.so  -L/root/test/DEBE/Prototype/src/../lib  -L/opt/intel/sgxssl/lib64  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libleveldb.so:/root/test/DEBE/Prototype/src/../lib:/opt/intel/sgxssl/lib64 -llz4 ../../../lib/libUtilCore.a -lssl -lcrypto -lpthread 
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 82%] Built target compressSYN
+1 warning generated.
+[ 83%] Linking CXX static library ../../../lib/libIndexCore.a
+cd /root/test/DEBE/Prototype/build/src/Index && /usr/bin/cmake -P CMakeFiles/IndexCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Index && /usr/bin/cmake -E cmake_link_script CMakeFiles/IndexCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libIndexCore.a CMakeFiles/IndexCore.dir/absIndex.cc.o CMakeFiles/IndexCore.dir/enclaveIndex.cc.o
+/usr/bin/llvm-ranlib ../../../lib/libIndexCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 83%] Built target IndexCore
+make  -f src/Server/CMakeFiles/ServerCore.dir/build.make src/Server/CMakeFiles/ServerCore.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/Server /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/Server /root/test/DEBE/Prototype/build/src/Server/CMakeFiles/ServerCore.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/Server/CMakeFiles/ServerCore.dir/build.make src/Server/CMakeFiles/ServerCore.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 87%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/dataReceiver.cc.o
+[ 87%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/dataWriter.cc.o
+[ 87%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/absRecvDecoder.cc.o
+[ 89%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/enclaveRecvDecoder.cc.o
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/absRecvDecoder.cc.o -MF CMakeFiles/ServerCore.dir/absRecvDecoder.cc.o.d -o CMakeFiles/ServerCore.dir/absRecvDecoder.cc.o -c /root/test/DEBE/Prototype/src/Server/absRecvDecoder.cc
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/dataReceiver.cc.o -MF CMakeFiles/ServerCore.dir/dataReceiver.cc.o.d -o CMakeFiles/ServerCore.dir/dataReceiver.cc.o -c /root/test/DEBE/Prototype/src/Server/dataReceiver.cc
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/dataWriter.cc.o -MF CMakeFiles/ServerCore.dir/dataWriter.cc.o.d -o CMakeFiles/ServerCore.dir/dataWriter.cc.o -c /root/test/DEBE/Prototype/src/Server/dataWriter.cc
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/enclaveRecvDecoder.cc.o -MF CMakeFiles/ServerCore.dir/enclaveRecvDecoder.cc.o.d -o CMakeFiles/ServerCore.dir/enclaveRecvDecoder.cc.o -c /root/test/DEBE/Prototype/src/Server/enclaveRecvDecoder.cc
+In file included from /root/test/DEBE/Prototype/src/Server/dataWriter.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/dataWriter.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/messageQueue.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Server/absRecvDecoder.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/absRecvDecoder.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Server/dataReceiver.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/dataReceiver.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Server/enclaveRecvDecoder.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/enclaveRecvDecoder.h:18:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+/root/test/DEBE/Prototype/src/Server/enclaveRecvDecoder.cc:65:12: warning: variable 'totalProcTime' set but not used [-Wunused-but-set-variable]
+    double totalProcTime = 0;
+           ^
+1 warning generated.
+[ 90%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/raUtil.cc.o
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/raUtil.cc.o -MF CMakeFiles/ServerCore.dir/raUtil.cc.o.d -o CMakeFiles/ServerCore.dir/raUtil.cc.o -c /root/test/DEBE/Prototype/src/Server/raUtil.cc
+1 warning generated.
+1 warning generated.
+[ 91%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/serverOptThread.cc.o
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/serverOptThread.cc.o -MF CMakeFiles/ServerCore.dir/serverOptThread.cc.o.d -o CMakeFiles/ServerCore.dir/serverOptThread.cc.o -c /root/test/DEBE/Prototype/src/Server/serverOptThread.cc
+[ 93%] Building CXX object src/Server/CMakeFiles/ServerCore.dir/storageCore.cc.o
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/Server/CMakeFiles/ServerCore.dir/storageCore.cc.o -MF CMakeFiles/ServerCore.dir/storageCore.cc.o.d -o CMakeFiles/ServerCore.dir/storageCore.cc.o -c /root/test/DEBE/Prototype/src/Server/storageCore.cc
+2 warnings generated.
+In file included from /root/test/DEBE/Prototype/src/Server/raUtil.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/raUtil.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Server/serverOptThread.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/serverOptThead.h:16:
+In file included from /root/test/DEBE/Prototype/src/../include/dataWriter.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/messageQueue.h:15:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/Server/storageCore.cc:12:
+In file included from /root/test/DEBE/Prototype/src/Server/../../include/storageCore.h:4:
+In file included from /root/test/DEBE/Prototype/src/../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+1 warning generated.
+1 warning generated.
+[ 94%] Linking CXX static library ../../../lib/libServerCore.a
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/cmake -P CMakeFiles/ServerCore.dir/cmake_clean_target.cmake
+cd /root/test/DEBE/Prototype/build/src/Server && /usr/bin/cmake -E cmake_link_script CMakeFiles/ServerCore.dir/link.txt --verbose=1
+/usr/bin/llvm-ar qc ../../../lib/libServerCore.a CMakeFiles/ServerCore.dir/absRecvDecoder.cc.o CMakeFiles/ServerCore.dir/dataReceiver.cc.o CMakeFiles/ServerCore.dir/dataWriter.cc.o CMakeFiles/ServerCore.dir/enclaveRecvDecoder.cc.o CMakeFiles/ServerCore.dir/raUtil.cc.o CMakeFiles/ServerCore.dir/serverOptThread.cc.o CMakeFiles/ServerCore.dir/storageCore.cc.o
+/usr/bin/llvm-ranlib ../../../lib/libServerCore.a
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 94%] Built target ServerCore
+make  -f src/App/CMakeFiles/DEBEServer.dir/build.make src/App/CMakeFiles/DEBEServer.dir/depend
+make  -f src/App/CMakeFiles/DEBEClient.dir/build.make src/App/CMakeFiles/DEBEClient.dir/depend
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/App /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/App /root/test/DEBE/Prototype/build/src/App/CMakeFiles/DEBEServer.dir/DependInfo.cmake --color=
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+cd /root/test/DEBE/Prototype/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/test/DEBE/Prototype /root/test/DEBE/Prototype/src/App /root/test/DEBE/Prototype/build /root/test/DEBE/Prototype/build/src/App /root/test/DEBE/Prototype/build/src/App/CMakeFiles/DEBEClient.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+make  -f src/App/CMakeFiles/DEBEServer.dir/build.make src/App/CMakeFiles/DEBEServer.dir/build
+make  -f src/App/CMakeFiles/DEBEClient.dir/build.make src/App/CMakeFiles/DEBEClient.dir/build
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+make[2]: Entering directory '/root/test/DEBE/Prototype/build'
+[ 97%] Building CXX object src/App/CMakeFiles/DEBEServer.dir/dbeServer.cc.o
+[ 97%] Building CXX object src/App/CMakeFiles/DEBEClient.dir/dbeClient.cc.o
+cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/App/CMakeFiles/DEBEServer.dir/dbeServer.cc.o -MF CMakeFiles/DEBEServer.dir/dbeServer.cc.o.d -o CMakeFiles/DEBEServer.dir/dbeServer.cc.o -c /root/test/DEBE/Prototype/src/App/dbeServer.cc
+cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/clang++  -I/root/test/DEBE/Prototype/src/../include -I/root/test/DEBE/Prototype/src/../build/src/Enclave -I/opt/intel/sgxsdk/include -I/opt/intel/sgxssl/include -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -std=gnu++17 -MD -MT src/App/CMakeFiles/DEBEClient.dir/dbeClient.cc.o -MF CMakeFiles/DEBEClient.dir/dbeClient.cc.o.d -o CMakeFiles/DEBEClient.dir/dbeClient.cc.o -c /root/test/DEBE/Prototype/src/App/dbeClient.cc
+In file included from /root/test/DEBE/Prototype/src/App/dbeClient.cc:12:
+In file included from /root/test/DEBE/Prototype/src/App/../../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+In file included from /root/test/DEBE/Prototype/src/App/dbeServer.cc:12:
+In file included from /root/test/DEBE/Prototype/src/App/../../include/configure.h:17:
+/root/test/DEBE/Prototype/src/../include/define.h:126:18: warning: variable 'vm_usage' set but not used [-Wunused-but-set-variable]
+        uint64_t vm_usage     = 0;
+                 ^
+1 warning generated.
+[ 98%] Linking CXX executable ../../../bin/DEBEServer
+cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/cmake -E cmake_link_script CMakeFiles/DEBEServer.dir/link.txt --verbose=1
+/usr/bin/clang++ -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -rdynamic CMakeFiles/DEBEServer.dir/dbeServer.cc.o -o ../../../bin/DEBEServer   -L/usr/lib/x86_64-linux-gnu/libleveldb.so  -L/root/test/DEBE/Prototype/src/../lib  -L/opt/intel/sgxssl/lib64  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libleveldb.so:/root/test/DEBE/Prototype/src/../lib:/opt/intel/sgxssl/lib64 -lssl -lcrypto -lleveldb -lboost_thread -lboost_system -lboost_serialization -lpthread -ljemalloc ../../../lib/libEnclaveCore.a ../../../lib/libUtilCore.a ../../../lib/libDatabaseCore.a ../../../lib/libIndexCore.a ../../../lib/libCommCore.a ../../../lib/libIASCore.a ../../../lib/libClientCore.a ../../../lib/libServerCore.a ../../../lib/libIndexCore.a ../../../lib/libServerCore.a -lssl -lcrypto -lleveldb -lboost_thread -lboost_system -lboost_serialization -ljemalloc ../../../lib/libUtilCore.a -lpthread ../../../lib/libEnclaveCore.a -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG                                          -L/opt/intel/sgxsdk/lib64                                          -lsgx_urts                                          -lsgx_uae_service                                          -lsgx_ukey_exchange                                          -lpthread -lsgx_urts -lsgx_uae_service -lsgx_capable -lsgx_usgxssl ../../../lib/libCommCore.a ../../../lib/libIASCore.a 
+make[2]: Leaving directory '/root/test/DEBE/Prototype/build'
+[ 98%] Built target DEBEServer
+1 warning generated.
 [100%] Linking CXX executable ../../../bin/DEBEClient
 cd /root/test/DEBE/Prototype/build/src/App && /usr/bin/cmake -E cmake_link_script CMakeFiles/DEBEClient.dir/link.txt --verbose=1
 /usr/bin/clang++ -O3 -Wall -Wno-implicit-exception-spec-mismatch -DCHECK_SGX_HW=1 -rdynamic CMakeFiles/DEBEClient.dir/dbeClient.cc.o -o ../../../bin/DEBEClient   -L/usr/lib/x86_64-linux-gnu/libleveldb.so  -L/root/test/DEBE/Prototype/src/../lib  -L/opt/intel/sgxssl/lib64  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libleveldb.so:/root/test/DEBE/Prototype/src/../lib:/opt/intel/sgxssl/lib64 -lssl -lcrypto -lleveldb -lboost_thread -lboost_system -lboost_serialization -lpthread -ljemalloc ../../../lib/libEnclaveCore.a ../../../lib/libUtilCore.a ../../../lib/libDatabaseCore.a ../../../lib/libIndexCore.a ../../../lib/libCommCore.a ../../../lib/libIASCore.a ../../../lib/libClientCore.a ../../../lib/libServerCore.a ../../../lib/libIndexCore.a ../../../lib/libServerCore.a -lssl -lcrypto -lleveldb -lboost_thread -lboost_system -lboost_serialization -ljemalloc ../../../lib/libUtilCore.a -lpthread ../../../lib/libEnclaveCore.a -m64 -O3 -UDEBUG -DNDEBUG -DEDEBUG                                          -L/opt/intel/sgxsdk/lib64                                          -lsgx_urts                                          -lsgx_uae_service                                          -lsgx_ukey_exchange                                          -lpthread -lsgx_urts -lsgx_uae_service -lsgx_capable -lsgx_usgxssl ../../../lib/libCommCore.a ../../../lib/libIASCore.a 
